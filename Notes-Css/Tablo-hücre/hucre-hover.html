@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablo hover hucre</title>
+    <link rel="stylesheet" href="./css/style.css">
+
+    <style>
+        .Tablolar .satir1 {
+            background-color: red;
+            border: 2px solid #000000;
+            padding: 4em;
+        }
+
+        .Tablolar .satir2:hover {
+            background-color: green;
+            border: 2px solid #000000;
+        }
+
+        .Tablolar .satir2 a:hover {
+            background-color: transparent; /* Link üzerine gelindiğinde rengin değişmesini önlemek için */
+            border: 2px solid #000000;
+        }
+    </style>
+</head>
+<body>
+    <table class="Tablolar">
+        <tr>
+            <td class="satir1">KaizenDev</td>
+        </tr>
+        <tr>
+            <td class="satir2"> <a href="https://discord.com">Discord</a> </td>
+        </tr>
+    </table>
+</body>
+</html>

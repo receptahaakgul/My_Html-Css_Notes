@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>z-index</title>
+    <link rel="stylesheet" href="./css/style.css" media="all">
+
+    <style type="text/css">
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        #kapsayici {
+            width: 200px;
+            margin: 100px auto;
+            background-color: #BCDDEF;
+        }
+
+        .ortakDegerler {
+            width: 50px;
+            height: 50px;
+        }
+
+        #kutuBir {
+            background-color: red;
+        }
+
+        #kutuIki {
+            background-color: blue;
+            position: absolute;
+            right: 20px;
+            top: 30px;
+            z-index: 100;
+        }
+
+        #kutuUc {
+            background-color: black;
+            position: absolute;
+            right: 30px;
+            top: 50px;
+            z-index: 99;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="kapsayici">
+        <div id="kutuBir" class="ortakDegerler"></div>
+        <div id="kutuIki" class="ortakDegerler"></div>
+        <div id="kutuUc" class="ortakDegerler"></div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position2</title>
+    <link rel="stylesheet" href="./css/style.css" media="all">
+
+    <style type="text/css">
+        
+        body {
+            width: 1000px;
+            height: 3000px;
+            border: 1px solid red;
+        }
+        .kutu3 {
+            position: relative;
+            width: 400px;
+            height: 400px;
+            border: 1px solid red;
+        }
+
+        .kutu4 {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            border: 1px solid red; 
+        }
+
+        .kutu5 {
+            position: fixed;
+            width: 100px;
+            height: 100px;
+            border: 1px solid red;
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="kutu3">
+        <div class="kutu4">Kaizen Dev</div>
+    </div>
+    <div class="kutu5">Fixed Position</div>
+    
+</body>
+</html>

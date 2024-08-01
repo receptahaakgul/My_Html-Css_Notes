@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Box</title>
+    <link rel="stylesheet" href="./css/style.css" media="all">
+
+    <style type="text/css">
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        #kapsayici {
+            width: 200px;
+            margin: 100px auto;
+            background-color: #BCDDEF;
+        }
+
+        .ortakDegerler {
+            width: 50px;
+            height: 50px;
+        }
+
+        #kutuBir {
+            background-color: red;
+            position: relative;
+            left: 50px;
+            top: 0px;
+        }
+
+        #kutuIki {
+            background-color: blue;
+            position: relative;
+            left: 0px;
+            top: 0px;
+        }
+
+        #kutuUc {
+            background-color: aquamarine;
+            position: relative;
+            left: 50px;
+            top: 0px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="kapsayici">
+        <div id="kutuBir" class="ortakDegerler"></div>
+        <div id="kutuIki" class="ortakDegerler"></div>
+        <div id="kutuUc" class="ortakDegerler"></div>
+    </div>
+    
+</body>
+</html>
