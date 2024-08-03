@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-image: url(/vecteezy_vivid-blurred-liquify-colorful-wallpaper-abstract-background_6967053.jpg);
+    background-size: cover;
+    background-attachment: fixed; /* Arka plan resminin sabit kalmasını sağlar */
+    background-repeat: no-repeat; /* Arka plan resminin tekrar etmesini engeller */
+}
+
+/* !Header Start*/
+
+header {
+    height: 100px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.06);
+    color: transparent;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80%;
+}
+
+header nav .Logo {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    column-gap: 30px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color .24s ease;
+}
+
+nav ul li a:hover {
+    color: rgb(144, 25, 255);
+}
+
+nav .menu {
+    display: flex;
+    align-items: center;
+    column-gap: 48px;
+}
+
+nav .menu .New-link-button {
+    color: #8d01d3;
+    background-color: rgb(157, 51, 243, 0.08);
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 56px;
+    transition: .25s ease;
+}
+
+nav .menu .New-link-button:hover {
+    background-color: #660099;
+    color: #fff;
+}
+
+/* !Header End*/
+
+/* ! Section start*/
+
+.content {
+    color: white;
+    height: calc(100vh - 100px);
+    padding-top: 150px;
+}
+
+.content h1 {
+    font-size: 60px;
+    text-align: center;
+}
+
+.content p {
+    font-size: 24px;
+    text-align: center;
+    margin-top: 32px;
+}
+
+.content .Links {
+    display: flex;
+    justify-content: center;
+    margin-top: 48px;
+    column-gap: 16px;
+}
+
+.content .Links a {
+    background-color: white;
+    padding: 20px;
+    width: 280px;
+    color: black;
+    text-align: center;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 56px;
+    transition: all .25s ease-in ;
+}
+
+.content .Links a:hover {
+    background-color: #660099;
+    color: white;
+}
+
+/* ! Section end*/
+
+/* ?           Sıkıntılı         ? */
+
+/* ! responsive start*/
+
+@media(max-width:576px) {
+    .container {
+        width: 100%;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .menu .New-link-button {
+        display: none;
+    }
+
+    .menu ul {
+        column-gap: 15px;
+    }
+
+    .content {
+        padding: 50px;
+        background-size: cover; /* Arka plan resminin mobilde kaplamasını sağlar */
+        background-attachment: fixed; /* Arka plan resminin sabit kalmasını sağlar */
+    }
+
+    .content h1 {
+        font-size: 36px;
+    }
+
+    .content p {
+        font-size: 16px;
+    }
+
+    .content .Links {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 1rem;
+    }
+
+    .content .Links a {
+        padding: 14px;
+        width: 90%;
+    }
+}
+
+/* ! responsive end*/
